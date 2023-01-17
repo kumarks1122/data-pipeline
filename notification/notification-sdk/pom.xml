@@ -41,6 +41,12 @@
              <groupId>com.google.firebase</groupId>
              <artifactId>firebase-admin</artifactId>
              <version>6.9.0</version>
+			 <exclusions>
+				 <exclusion>
+					 <groupId>io.grpc</groupId>
+					 <artifactId>grpc-api</artifactId>
+				 </exclusion>
+			 </exclusions>
          </dependency>
 		<dependency>
 			<groupId>org.jboss.logging</groupId>
