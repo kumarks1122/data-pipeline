@@ -88,7 +88,11 @@ base_config: |
     }
     job {
       env = "{{ env_name }}"
+      {% if checkpoint_store_type == "gcloud" %}
+      enable.distributed.checkpointing = false
+      {% else %}
       enable.distributed.checkpointing = true
+      {% endif %}
       statebackend {
         blob {
           storage {
