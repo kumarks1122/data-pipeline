@@ -174,7 +174,7 @@ flink_job_names:
     replica: 1
     jobmanager_memory: 1024m
     taskmanager_memory: 1024m
-    taskslots: 1
+    taskslots: 4
     cpu_requests: 0.3
   merge-user-courses:
     job_class_name: 'org.sunbird.job.merge.user.courses.task.MergeUserCoursesStreamTask'
